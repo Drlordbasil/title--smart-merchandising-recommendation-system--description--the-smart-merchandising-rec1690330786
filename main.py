@@ -6,6 +6,7 @@ from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 import cv2
 
+
 class SmartMerchandisingRecommendationSystem:
     def __init__(self, sales_data, customer_data, inventory_data):
         self.sales = sales_data
@@ -61,12 +62,14 @@ class SmartMerchandisingRecommendationSystem:
         # Implementation logic for interactive dashboard
         pass
 
+
 # Example usage:
 sales_data = pd.read_csv('sales_data.csv')
 customer_data = pd.read_csv('customer_data.csv')
 inventory_data = pd.read_csv('inventory_data.csv')
 
-system = SmartMerchandisingRecommendationSystem(sales_data, customer_data, inventory_data)
+system = SmartMerchandisingRecommendationSystem(
+    sales_data, customer_data, inventory_data)
 system.real_time_data_analysis()
 system.customer_segmentation()
 system.product_affinity_analysis()
