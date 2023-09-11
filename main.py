@@ -63,17 +63,18 @@ class SmartMerchandisingRecommendationSystem:
         pass
 
 
-# Example usage:
-sales_data = pd.read_csv('sales_data.csv')
-customer_data = pd.read_csv('customer_data.csv')
-inventory_data = pd.read_csv('inventory_data.csv')
+if __name__ == "__main__":
+    # Example usage:
+    sales_data = pd.read_csv('sales_data.csv')
+    customer_data = pd.read_csv('customer_data.csv')
+    inventory_data = pd.read_csv('inventory_data.csv')
 
-system = SmartMerchandisingRecommendationSystem(
-    sales_data, customer_data, inventory_data)
-system.real_time_data_analysis()
-system.customer_segmentation()
-system.product_affinity_analysis()
-system.real_time_inventory_management()
-system.shelf_optimization()
-system.dynamic_pricing_strategies()
-system.interactive_dashboard()
+    system = SmartMerchandisingRecommendationSystem(
+        sales_data, customer_data, inventory_data)
+    system.real_time_data_analysis()
+    system.customer_segmentation()
+    system.product_affinity_analysis()
+    system.real_time_inventory_management()
+    system.shelf_optimization()
+    system.dynamic_pricing_strategies()
+    system.interactive_dashboard()
